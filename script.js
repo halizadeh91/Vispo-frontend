@@ -59,7 +59,7 @@ let moodScale = 0.2;
 
 document.getElementById("submit").addEventListener("click", async () => {
   const text = document.getElementById("poem").value;
-  const res = await fetch("https://your-fastapi-app.onrender.com/analyze", {
+  const res = await fetch("https://vispo.onrender.com/analyze", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text })
